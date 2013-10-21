@@ -1,0 +1,14 @@
+<h1>List of NFL Teams</h1>
+
+<table>
+  <tr>
+    <th>Team Name</th>
+    <th>Quarterback</th>
+  </tr>
+  <% @teams.each do |team| %>
+    <tr>
+      <td><%= team.name %></td>
+      <td><%= team.qb %></td>
+    </tr>
+<% end %>
+</table>
