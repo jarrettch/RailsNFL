@@ -9,8 +9,8 @@
 Team.destroy_all
 
 Team.create([
-  {name: 'Oakland Raiders', qb: 'Terrelle Pryor'},
-  {name: 'New York Giants', qb: 'Eli Manning'},
-  {name: 'San Francisco 49ers', qb: 'Colin Kaepernick'},
-  {name: 'Denver Broncos', qb: 'Peyton Manning'},
+  {name: 'Oakland Raiders', qb: 'Terrelle Pryor', coach: 'Dennis Allen'},
+  {name: 'New York Giants', qb: 'Eli Manning', coach: 'Tom Coughlin'},
+  {name: 'San Francisco 49ers', qb: 'Colin Kaepernick', coach: 'Jim Harbaugh'},
+  {name: 'Denver Broncos', qb: 'Peyton Manning', coach: 'John Fox'},
   ])

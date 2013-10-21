@@ -3,5 +3,6 @@ class Team
 
   field :name, type: String
   field :qb, type: String
+  field :coach, type: String
 
 end

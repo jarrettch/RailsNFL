@@ -9,6 +9,9 @@
     <tr>
       <td><%= team.name %></td>
       <td><%= team.qb %></td>
+      <td><%= team.coach %></td>
+      <td><%= button_to "X", { action: "destroy", id: team.id}, {method: :delete, data:{confirm:"Are you sure?"}} %></td>
     </tr>
-<% end %>
+  <% end %>
 </table>
+<a href="/teams/new">Create a team!</a>
