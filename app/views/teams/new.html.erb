@@ -1,23 +1,21 @@
+<div id="newcontainer">
 <h1>Create a new team entry!!!!</h1>
+<br />
 
-<p>
 <%= form_for @team do |team|%>
   <%= team.label :name, "Name" %>
   <%= team.text_field :name %>
-</p>
+<br />
 
-<p>
   <%= team.label :qb, "Quarterback" %>
   <%= team.text_field :qb %>
-</p>
+<br />
 
-<p>
   <%= team.label :coach, "Head Coach" %>
   <%= team.text_field :coach %>
-</p>
+<br />
 
-<p>
   <%= team.submit %>
-</p>
 
 <% end %>
+</div>

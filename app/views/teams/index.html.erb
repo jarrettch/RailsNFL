@@ -1,17 +1,21 @@
+<div id="indexcontainer">
 <h1>List of NFL Teams</h1>
 
 <table>
   <tr>
     <th>Team Name</th>
     <th>Quarterback</th>
+    <th>Coach</th>
+    <th></th>
   </tr>
   <% @teams.each do |team| %>
     <tr>
       <td><%= team.name %></td>
       <td><%= team.qb %></td>
       <td><%= team.coach %></td>
-      <td><%= button_to "X", { action: "destroy", id: team.id}, {method: :delete, data:{confirm:"Are you sure?"}} %></td>
+      <td><%= button_to "X", { action: "destroy", id: team.id}, {method: :delete, data:{confirm:"Are you sure?"}, :class => "mybutton"}  %></td>
     </tr>
   <% end %>
 </table>
 <a href="/teams/new">Create a team!</a>
+</div>
